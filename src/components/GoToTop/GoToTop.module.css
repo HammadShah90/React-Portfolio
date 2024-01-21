@@ -1,0 +1,44 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topBtn {
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  background-color: var(--color-primary);
+  bottom: 10px;
+  right: 8.3rem;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.topBtnIcon {
+  animation: ToGoTop 1s linear infinite alternate-reverse;
+}
+
+@keyframes ToGoTop {
+  0% {
+    transform: translateY(-0.45rem);
+  }
+  100% {
+    transform: translateY(0.3rem);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .topBtn {
+    bottom: 10px;
+    right: 11rem;
+  }
+}

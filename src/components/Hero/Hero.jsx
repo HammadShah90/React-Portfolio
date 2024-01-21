@@ -15,12 +15,12 @@ export const Hero = () => {
     <section className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Muhammad Hammad</h1>
-        <p className={styles.desc}>
+        <p className={styles.desc} style={{marginBottom: "10px"}}>
           Full Stack Developer with expertise in JavaScript, HTML, CSS, ReactJs,
           and NodeJs. Experienced in creating scalable and user-friendly web
-          applications. Let's work together to bring your ideas to life! <br /> Feel free to check
-          out my resume for more details.
+          applications. Let's work together to bring your ideas to life!
         </p>
+        <p className={styles.desc}>Feel free to check out my resume for more details.</p>
         <div className={styles.resumeBtns}>
           <a
             href={resumeUrl}
@@ -45,4 +45,3 @@ export const Hero = () => {
     </section>
   );
 };
-("");
