@@ -14,7 +14,7 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Muhammad Hammad</h1>
+        <h1 className={styles.title}>Salam, I'm Muhammad Hammad</h1>
         <p className={styles.desc} style={{marginBottom: "10px"}}>
           Full Stack Developer with expertise in JavaScript, HTML, CSS, ReactJs,
           and NodeJs. Experienced in creating scalable and user-friendly web
