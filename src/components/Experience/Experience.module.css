@@ -90,9 +90,9 @@
 }
 
 .historyItemDetails p {
-    font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .historyItemDetails ul {
@@ -103,7 +103,7 @@
   margin-left: 17px;
 }
 
-@media screen and (max-width: 950px) {
+@media (min-width: 390px) and (max-width: 950px) {
   .content {
     flex-direction: column;
     align-items: center;
@@ -119,5 +119,49 @@
   .history {
     width: 100%;
     gap: 9px;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 22px;
+  }
+
+  .historyItemDetails p {
+    font-size: 15px;
+  }
+
+  .historyItemDetails ul {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .history {
+    width: 100%;
+    gap: 9px;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 20px;
+  }
+
+  .historyItemDetails p {
+    font-size: 13px;
+  }
+
+  .historyItemDetails ul {
+    font-size: 14px;
   }
 }
