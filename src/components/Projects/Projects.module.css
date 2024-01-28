@@ -16,11 +16,29 @@
 
 .projects {
   margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  /* justify-content: center; */
   gap: 15px;
-  width: 100%;
+  /* width: 100%; */
+}
+
+@media (min-width: 390px) and (max-width: 950px) {
+  .projects {
+    margin-top: 37px;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: 25px;
+    /* width: 100%; */
+  }
+}
+
+
+@media screen and (max-width: 390px) {
+  
 }

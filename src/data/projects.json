@@ -1,8 +1,8 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "title": "Vtube App",
+    "imageSrc": "projects/VtubeApp.jpg",
+    "description": "Vtube is a cutting-edge video-sharing platform designed to empower creators and connect audiences worldwide. Whether you're a content creator or a passionate viewers.",
     "skills": ["React", "Express", "Node"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
@@ -10,7 +10,7 @@
   {
     "title": "Project B",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "This is a project made to learn the latest languages by building an app.asdasdasdasdasdasdasdasdasdsaddafsdfsdfsdfsdfsdfsdfsdcsdfsdfsdfsdfsdfsadfdsfd sefdsfdsf",
     "skills": ["React", "Express", "Node", "Sass"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"

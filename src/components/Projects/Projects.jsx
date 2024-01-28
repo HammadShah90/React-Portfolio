@@ -9,20 +9,26 @@ import "react-multi-carousel/lib/styles.css";
 
 export const Projects = () => {
   const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+      slidesToSlide: 2,
+    },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 2,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
-      slidesToSlide: 2, // optional, default to 1.
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
   };
 
@@ -32,27 +38,14 @@ export const Projects = () => {
     <section className={styles.container} id="projects">
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projects}>
-        <Carousel
-          swipeable={false}
-          draggable={false}
-          showDots={true}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          //   autoPlay={isMobile ? false : true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          deviceType={isMobile ? "mobile" : "desktop"}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
+        <Carousel responsive={responsive}>
           {projects.map((project, id) => {
             return <ProjectCard key={id} project={project} />;
           })}
+          {/* <div>Item 1</div>
+          <div>Item 2</div>
+          <div>Item 3</div>
+          <div>Item 4</div> */}
         </Carousel>
       </div>
     </section>

@@ -12,17 +12,23 @@
 
 .image {
   margin-bottom: 26px;
+  height: 160px;
+  border-radius: 10px;
 }
 
 .title {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 22px;
 }
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  max-height: 5em;
 }
 
 .skills {
@@ -36,26 +42,26 @@
 }
 
 .skill {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 18px;
+  /* font-weight: 400; */
   border-radius: 100px;
   background: var(--color-dark);
-  padding: 2px 22px;
+  padding: 8px 15px;
 }
 
 .links {
   width: 100%;
   margin-top: 26px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
   border-radius: 100px;
   background: var(--color-primary);
-  padding: 1px 22px;
+  padding: 10px 22px;
 }

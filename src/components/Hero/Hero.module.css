@@ -63,6 +63,7 @@
   border-radius: 30%;
   opacity: 0.6;
   filter: drop-shadow(5px 5px 10px #314bbe);
+  /* box-shadow: 5px 5px 10px #314bbe; */
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
